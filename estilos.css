@@ -1,0 +1,141 @@
+/* estilos.css */
+
+:root {
+    --fondo: #434e52;
+    --color1: #5b8c85;
+    --hover1: #ecce6d;
+    --hover2: #b0a160;
+    --blanco: #FFF;
+    --gris: #CCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;    
+}
+
+.inicio {
+    margin-top: 30px;
+    height: 1024px;
+    max-width: 100%;    
+    background-image: url(images/background-top.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*
+    animation:
+        crecer ease-out 3s;
+    */
+}
+
+/*
+@keyframes crecer {
+    0% {
+        transform: scale(0)
+    }
+    100% {
+        transform: scale(115%);
+    }    
+}
+*/
+
+/*
+        ------------------------------------------------
+                        Menu Principal
+        ------------------------------------------------
+
+*/
+
+.inicio-logo {    
+    width: 100px;
+    height: 100px;
+}
+
+.topmenu {
+    background-color: var(--fondo);    
+    margin: 0 auto;
+    padding: 8px 0px 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-lista {    
+    width: 950px;    
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.menu-lista a {
+    float: left;
+    padding: 10px 50px;
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;    
+    transition: all 0.5s ease;    
+}
+
+.menu a:hover {
+    color: var(--hover1);
+}
+
+
+.hola {
+    height: 550px;
+    width: 750px;      
+    font-size: 30px;    
+    color: var(--blanco);
+    font-family: 'Raleway', sans-serif;   
+    line-height: initial;
+    text-shadow: 1px 2px 4px #000;
+    position: absolute;
+    top: 450px;
+    left: 40px;
+    animation:
+        aparece linear 1.5s;
+        /* mueve ease 3s; */        
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }        
+    100% {
+        opacity: 100;
+    }
+}
+
+/*
+@keyframes mueve {
+    0% {
+        transform: translate (-150px, 0);
+    }
+
+    50% {
+        transform: translate (150px, 0);
+    }
+}
+*/
