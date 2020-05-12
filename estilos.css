@@ -15,6 +15,13 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 75px;
+    color: var(--color1);
+    padding: 150px 0px 45px 160px;
+}
+
 body {
     background-color: var(--fondo);
     font-family: 'Raleway', sans-serif;
@@ -92,7 +99,8 @@ body {
     font-size: 15px;
     text-align: center;
     text-transform: uppercase;    
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
+    scroll-behavior: smooth;    
 }
 
 .menu a:hover {
@@ -110,7 +118,7 @@ body {
     text-shadow: 1px 2px 4px #000;
     position: absolute;
     top: 450px;
-    left: 40px;
+    left: 150px;
     animation:
         aparece linear 1.5s;
         /* mueve ease 3s; */        
@@ -139,3 +147,38 @@ body {
     }
 }
 */
+
+/*
+    ----------------------------------------------
+                        Quien soy
+    ----------------------------------------------
+*/
+
+.who {
+    /*padding-top: 120px;*/
+    height: 1024px;
+    max-width: 100%;
+    margin: 0px auto;
+    background-color: var(--blanco);
+}
+
+.quien-texto {
+    width: 750px;
+    height: 500px;
+    /*margin: 0px 275px auto;*/
+    font-size: 15px; 
+    float: left;    
+}
+
+.texto-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.quien-imag img {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-left: 30px;
+    filter: drop-shadow(1px 2px 4px var(--fondo))
+}
