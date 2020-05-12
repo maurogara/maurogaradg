@@ -17,15 +17,15 @@
 
 h2 {
     font-family: 'Raleway', sans-serif; 
-    font-size: 75px;
-    color: var(--color1);
+    font-size: 60px;
+    color: var(--fondo);
     padding: 150px 0px 45px 160px;
 }
 
 h3 {
     font-family: 'Raleway', sans-serif; 
     font-size: 40px;
-    color: var(--color1);
+    color: var(--fondo);
     margin-bottom: 16px;
 }
 
@@ -76,16 +76,17 @@ body {
 }
 
 .topmenu {
-    background-color: var(--fondo);    
+    background-color: var(--fondo);
     margin: 0 auto;
     padding: 8px 0px 8px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;    
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .menu-lista {    
@@ -178,7 +179,7 @@ body {
     width: 750px;
     height: 500px;
     /*margin: 0px 275px auto;*/;
-    line-height : 45px;       
+    line-height : 45px;           
 }
 
 .who-imag img {    
@@ -192,11 +193,25 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding-top: 45px;
+    padding-top: 55px;
 }
 
 .habilidades,
 .cv {
     width: 500px;
     height: 500px;
+    margin: 55px;
+}
+
+.cv a {    
+    width: 200px;
+    display: block;
+    height: 75px;    
+    line-height: 70px;
+    text-align: center;
+    margin: 20px 20px 0px 220px;
+    text-decoration: none;
+    border: 2px solid var(--gris);
+    font-size: 17px;
+    color: var(--fondo);    
 }
