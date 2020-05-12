@@ -22,6 +22,12 @@ h2 {
     padding: 150px 0px 45px 160px;
 }
 
+h3 {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 40px;
+    color: var(--color1);
+}
+
 body {
     background-color: var(--fondo);
     font-family: 'Raleway', sans-serif;
@@ -162,12 +168,11 @@ body {
     background-color: var(--blanco);
 }
 
-.quien-texto {
+.who-texto {
     width: 750px;
     height: 500px;
-    /*margin: 0px 275px auto;*/
-    font-size: 15px; 
-    float: left;    
+    /*margin: 0px 275px auto;*/;
+    line-height : 45px;       
 }
 
 .texto-img-wrapper {
@@ -175,8 +180,7 @@ body {
     justify-content: center;
 }
 
-.quien-imag img {
-    float: right;
+.who-imag img {    
     width: 500px;
     height: 500px;
     margin-left: 30px;
