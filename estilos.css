@@ -26,6 +26,7 @@ h3 {
     font-family: 'Raleway', sans-serif; 
     font-size: 40px;
     color: var(--color1);
+    margin-bottom: 16px;
 }
 
 body {
@@ -162,10 +163,15 @@ body {
 
 .who {
     /*padding-top: 120px;*/
-    height: 1024px;
+    height: 1200px;
     max-width: 100%;
     margin: 0px auto;
     background-color: var(--blanco);
+}
+
+.texto-img-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .who-texto {
@@ -175,14 +181,22 @@ body {
     line-height : 45px;       
 }
 
-.texto-img-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .who-imag img {    
     width: 500px;
     height: 500px;
     margin-left: 30px;
     filter: drop-shadow(1px 2px 4px var(--fondo))
+}
+
+.who-habcv {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.habilidades,
+.cv {
+    width: 500px;
+    height: 500px;
 }
