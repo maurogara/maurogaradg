@@ -25,8 +25,8 @@ h2 {
 h3 {
     font-family: 'Raleway', sans-serif; 
     font-size: 40px;
-    color: var(--fondo);
-    margin-bottom: 16px;
+    color: var(--fondo);    
+    display: block;
 }
 
 body {
@@ -196,11 +196,29 @@ body {
     padding-top: 55px;
 }
 
+.who-habcv img {
+    width: 50px;
+    height: 50px;    
+}
+
 .habilidades,
 .cv {
     width: 500px;
     height: 500px;
     margin: 55px;
+}
+
+.habilidades-titulo,
+.cv-titulo {
+    display: grid;
+    grid-template-columns: 1fr 366px;
+    align-items: center;
+    width: 420px;
+}
+
+.habilidades-text,
+.cv-text {
+    margin: 10px 0 0 25px;
 }
 
 .cv a {    
@@ -213,5 +231,11 @@ body {
     text-decoration: none;
     border: 2px solid var(--gris);
     font-size: 17px;
-    color: var(--fondo);    
+    color: var(--fondo);
+    transition: all 0.5s ease;    
+}
+
+.cv a:hover {
+    background-color: var(--color1);
+    color: var(--blanco);
 }
