@@ -34,7 +34,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 27px;    
+    line-height: 27px;
+    scroll-behavior: smooth;    
 }
 
 .inicio {
@@ -46,22 +47,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /*
-    animation:
-        crecer ease-out 3s;
-    */
+
 }
 
-/*
-@keyframes crecer {
-    0% {
-        transform: scale(0)
-    }
-    100% {
-        transform: scale(115%);
-    }    
-}
-*/
 
 /*
         ------------------------------------------------
@@ -107,8 +95,7 @@ body {
     font-size: 15px;
     text-align: center;
     text-transform: uppercase;    
-    transition: all 0.5s ease;
-    scroll-behavior: smooth;    
+    transition: all 0.5s ease;       
 }
 
 .menu a:hover {
@@ -128,8 +115,7 @@ body {
     top: 450px;
     left: 150px;
     animation:
-        aparece linear 1.5s;
-        /* mueve ease 3s; */        
+        aparece linear 1.5s;                
 }
 
 @keyframes aparece {
@@ -145,44 +131,33 @@ body {
 }
 
 /*
-@keyframes mueve {
-    0% {
-        transform: translate (-150px, 0);
-    }
-
-    50% {
-        transform: translate (150px, 0);
-    }
-}
-*/
-
-/*
     ----------------------------------------------
                         Quien soy
     ----------------------------------------------
 */
 
-.who {
-    /*padding-top: 120px;*/
+.who {    
     height: 1200px;
     max-width: 100%;
     margin: 0px auto;
     background-color: var(--blanco);
 }
 
-.texto-img-wrapper {
+.texto-img-wrapper,
+.what-texto-imag-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.who-texto {
+.who-texto,
+.what-texto{
     width: 750px;
-    height: 500px;
-    /*margin: 0px 275px auto;*/;
+    height: 500px;    
     line-height : 45px;           
 }
 
-.who-imag img {    
+.who-imag img,
+.what-imag img {    
     width: 500px;
     height: 500px;
     margin-left: 30px;
@@ -209,7 +184,11 @@ body {
 }
 
 .habilidades-titulo,
-.cv-titulo {
+.cv-titulo,
+.what-dis_titulo,
+.what-pack_titulo,
+.what-dig_titulo,
+.what-pro_titulo {
     display: grid;
     grid-template-columns: 1fr 366px;
     align-items: center;
@@ -217,7 +196,11 @@ body {
 }
 
 .habilidades-text,
-.cv-text {
+.cv-text,
+.grafico-text,
+.pack-text,
+.dig-text,
+.pro-text  {
     margin: 10px 0 0 25px;
 }
 
@@ -238,4 +221,40 @@ body {
 .cv a:hover {
     background-color: var(--color1);
     color: var(--blanco);
+}
+
+/*
+    ----------------------------------------------
+                        Servicios
+    ----------------------------------------------
+*/
+.what {    
+    height: 1200px;
+    max-width: 100%;
+    margin: 0px auto;
+    background-color: var(--color1);
+}
+
+.what h2 {
+    color: var(--blanco);
+}
+
+.what-texto p,
+.what-detalles p {
+    color: var(--blanco)
+}
+
+.what-detalles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 45px auto;
+    width: 800px;
+    height: 400px;
+    column-gap: 10px;
+    row-gap: 15px;    
+}
+
+.what-detalles h3 {
+    width: 480px;
+    color: var(--hover1);
 }
